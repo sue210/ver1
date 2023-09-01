@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import url(./fontStyle.css);
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* reset  */
+* { margin: 0; padding: 0;}
+li { list-style: none;}
+a { text-decoration: none; color: inherit;}
+img { display: block;}
+body { font-family: 'SUITE-Regular';}
+
+.wrap {width: 100%; position: relative;}
+
+.wrap > button { width: 300px; height: 50px; background-color: #b6ab9d; border-radius: 5px; position: absolute; top: 58%; right: 6%;}
+
+header { width: 100%; position: relative;}
+.inner { width: 1200px; margin: 0 auto; position: absolute; top: 25%; left: 20%;}
+header img { width: 100%;}
+
+header .new { position: absolute; top: 32%; left: 0%;}
+header .new ul {width: 400px; height: 430px; overflow: hidden;}
+header .new img { width: 400px; height: 430px; }
+header .new button {position: absolute; left: 8%; width: 180px; height: 40px; background-color: #000000; color: #fff; border-radius: 7px;}
+
+header h1 { width: 300px; position: absolute; top: -40%; left: -20%;}
+header h1 img { width: 300px; height: 300px; margin: 0 auto;}
+header nav {width: 900px; z-index: 10; color: #fff;}
+header nav .gnb { width: 600px; position: absolute; left: 25%;}
+header nav .gnb > li { width: 150px; height: 40px; line-height: 40px; text-align: center; float: left;}
+header nav .gnb > li > .submenu { display: none; width: 600px; height: 300px; position: absolute; top: 40px; right: 0;
+  background-color: rgba(78, 54, 48, .7); padding-left: 600px; z-index: 1;}
+/* header nav .gnb > li:hover > .submenu { display: block;} */
+header nav .gnb > li > .submenu > ul { width: 150px; float: left;}
+header nav .gnb > li a { display: block;}
+header nav .gnb > li:hover > a { background-color:#4e3630; }
+header nav .gnb > li > .submenu > ul > li:hover > a { background-color: #745148; }
+
+
+p { transform: translateX(-50%); opacity: 0; transition: .8s; font-size: 16px;}
+p.active { transform: translateX(0); opacity: 1;}
+
+div { width: 100%; height: 70vh; position: relative;}
+
+
+.image1 { background: url(../img/banner.jpg) no-repeat center/contain; background-attachment: fixed; background-color: #ffffff;}
+
+
+.image2 {width: 100%; height: 500px; background-color: #faebd7; background-attachment: fixed; padding: 100px 0;}
+.image2 .box { width: 1200px; margin:0 auto;}
+.image2 .box ul { width: (100% / 3);}
+.image2 .box ul::after {content:''; display:block; clear:both;}
+.image2 .box ul li { width: 400px; height: 450px; float: left;}
+.image2 .box ul li img { width: 300px; height: 350px; float: left; padding: 50px; }
+.image2 .box ul li img:hover { background-color: #e9dbc8;}
+.image2 .box ul li button { display: none;}
+.image2 .box ul li:hover button { display: block; width: 400px; height: 60px; background-color: #424242; color: #fff;}
+.image2 .box ul li span { font-size: 16px; display: block; text-align: center;}
+
+
+
+.image3 { width: 100%; height: 350px; background-color: #faebd7; padding: 80px 0;}
+.image3 .box1 h2 { font-size: 28px;}
+.image3 .box1 { width: 1350px; margin: 0 auto;} 
+.image3 .box1::after {content:''; display:block; clear:both;}
+.image3 .box1 ul {float: left;} 
+.image3 .box1 ul li {float: left;} 
+.image3 .box1 ul li img { float: left; width: 450px; height: 273px;} 
+.image3 ul li img:hover { background-color: #e9dbc8;}
+.image3 ul li span { font-size: 14px; display: block; text-align: center;}
+.image3 ul li button { display: none;}
+.image3 ul li:hover button { display: block; width: 450px; height: 50px; background-color:#be9d73; color: #fff; }
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background:#4e3630;
+    font-size: .9rem;
+    height: 150px;
+    width: 100%;
+    position: relative;
+  }
+  .text p { font-size: 24px; }
+  .text img { position: absolute; right: 0;}
+  .text1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    color: #ffffff;
+    font-size: .9rem;
+    font-weight: 400;
+    height: 400px;
+    width: 100%;
+    background: url(../img/aesop_banner.png)no-repeat right/contain #505235;
+  }
+.text1 span { display: block; padding: 50px; line-height: 40px;}
+.text1 span strong { display: block; line-height: 40px; font-size: 20px;}
+
+
+/* select */
+.select { background-color: #faebd7; width: 100%; height: 500px; position: relative;}
+.btn { width: 120px; padding: 5px; border: 1px solid #ffffff; border-radius: 4px; font-size: 16px; color: #ffffff; font-weight: 400; 
+  text-align: center; cursor: pointer; box-sizing: border-box; display: block; transition: .4s; }
+.btn:hover { background-color: #ddcfba; color: #000000; }
+
+.medal {width: 334px; height: 334px; perspective: 600px; position: relative;  background-color: #faebd7; position: absolute; top: 0; left: 20%; padding: 80px;}
+.medal .front,
+.medal .back { 
+  backface-visibility: hidden; position: absolute; width: 334px; height: 334px; transition: 1s; border-radius: 50%; 
+  text-align: center; top: 0; left: 0; right: 0; bottom: 0; margin: auto; background: url(../img/aesop_logo.jpg)no-repeat center/contain;}
+.medal .front .click1,
+.medal .back .click2 { 
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; width: 150px; height: 150px;}
+.medal .front { background-color: #e0dada; }
+.medal .back { width: 200px; height: 200px;}
+.medal .front { transform: rotateY(0deg);}
+.medal:hover .front { transform: rotateY(-180deg);}
+.medal .back { transform: rotateY(-180deg);}
+.medal:hover .back { transform: rotateY(0deg);}
+.medal .back .btn { position: absolute; top: 100px; left: 0; right: 0; margin: auto;}
+
+
+/* medal2 */
+
+.medal2 { width: 334px; height: 334px; perspective: 600px; position: relative;  background-color: antiquewhite; 
+  position: absolute; right: 20%; top: 0;  padding: 80px;}
+.medal2 .front,
+.medal2 .back { 
+  backface-visibility: hidden; position: absolute; width: 334px; height: 334px; transition: 1s; border-radius: 50%; 
+  text-align: center; top: 0; left: 0; right: 0; bottom: 0; margin: auto; background: url(../img/kit.png)no-repeat center/contain;}
+.medal2 .front .click1,
+.medal2 .back .click2 { 
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; width: 150px; height: 150px;}
+.medal2 .front { background-color: #e0dada; }
+.medal2 .back { width: 200px; height: 200px;}
+.medal2 .front { transform: rotateY(0deg);}
+.medal2:hover .front { transform: rotateY(-180deg);}
+.medal2 .back { transform: rotateY(-180deg);}
+.medal2:hover .back { transform: rotateY(0deg);}
+.medal2 .back .btn { position: absolute; top: 160px; left: 0; right: 0; margin: auto; color: #000000;  border: 1px solid #000000;}
+
+/* footer */
+footer { width: 100%; position: relative;}
+footer .footer_inner { width: 100%; height: 200px; background-color:#333333;}
+footer .footer_inner ul li { color: #ffffff;}
+footer .footer_inner ul li:first-child { position: absolute; top: 10%; left: 5%; text-align: center;}
+footer .footer_inner ul li:nth-child(2) { position: absolute; top: 10%; left: 20%; text-align: center;}
+footer .footer_inner ul li:nth-child(3) { position: absolute; top: 10%; left: 30%; text-align: center;}
+footer .footer_inner ul li:nth-child(4) { position: absolute; top: 10%; left: 40%; text-align: center;}
+footer .footer_inner ul li:nth-child(5) { position: absolute; top: 80%; left: 90%; text-align: center;}
+footer .footer_inner address { color: #ffffff; position: absolute; bottom: 10%; left: 5%; font-size: 14px;}
+footer .footer_inner select { position: absolute; top: 10%; right: 5%; width: 150px; height: 30px;}

@@ -1,0 +1,160 @@
+@charset "utf-8";
+@import url(./fontStyle.css);
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* reset  */
+* { margin: 0; padding: 0;}
+li { list-style: none;}
+a { text-decoration: none; color: inherit;}
+img { display: block;}
+body { font-family: 'Pretendard-Regular';}
+button { font-size: 22px;}
+/* 전체 프레임 */
+div#wrap {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color:  #fff7df;}
+div#wrap ul#gnb { position: fixed; top: 4%; left: 37%; }
+div#wrap ul#gnb li { float: left; padding: 20px;}
+div#wrap ul#gnb li a { font-size: 20px; color: #000000;}
+div#wrap ul#gnb li:hover a { font-size: 26px; color: #ffb936; }
+
+
+/* 메뉴 */
+div#wrap nav { position: fixed; bottom: 0%; left: 0; width: 100%; height: 110px; background-color: #000000; }
+div#wrap nav ul { position: fixed; bottom: 0%; left: 15%;}
+div#wrap nav li {width: 200px; padding: 40px 0px; }
+div#wrap nav li a { display: block; width: 10%; height: 20px; background-color: #ffffff; color: #ffffff; margin: 0 auto;
+transition: .5s; font-size: 14px; opacity: .5; position: relative; border-radius: 50%; }
+div#wrap nav li p { position: absolute; top: 0; left: 40px;}
+div#wrap nav li:first-child { float: left;}
+div#wrap nav li:nth-child(2) { float: left;}
+div#wrap nav li:nth-child(3) { float: left;}
+div#wrap nav li:nth-child(4) { float: left;}
+div#wrap nav li:nth-child(5) { float: left;}
+div#wrap nav li:hover a { background-color: #9c34c5; color: #9c34c5; opacity: .9;}
+div#wrap nav li a.on {background-color: #ffb936; color: #ffb936; opacity: .9; }
+
+div#wrap figure { position: absolute; top: 10%; right: 0; width: 800px; height: 500px; transition: 1s;}
+div#wrap figure ol .page1 { background: url(../img/tiffany_main\ page.png) no-repeat center/contain; position: absolute; top: 10%; right: 46%; width: 800px; height: 500px; 
+  transition: 1s;}
+div#wrap figure ol .page2 { background: url(../img/tiffany_sub\ page.png) no-repeat center/contain; position: absolute;  top: 10%; right: 46%; width: 800px; height: 500px; 
+  transition: 1s;}
+div#wrap figure ol .page3 { background: url(../img/tiffany_sub\ page.png) no-repeat center/contain; position: absolute;  top: 10%; right: 46%; width: 800px; height: 500px; 
+  transition: 1s;}
+div#wrap figure ol .page4 { background: url(../img/tiffany_sub\ page.png) no-repeat center/contain; position: absolute;  top: 10%; right: 46%; width: 800px; height: 500px; 
+  transition: 1s;}
+div#wrap figure p a {width: 140px; height: 20px; padding: 7px; font-size: 14px; border: 1px solid #030303; color: #000000; background-color: #cecece; 
+  text-align: center; border-radius: 3px; position: fixed; bottom: 34%; right: 18%; }
+div#wrap figure a:hover { color: #fff7df; background-color: #000000; transition: .5s;}
+div#wrap figure ul li a { display: none;}
+div#wrap button { position: absolute; bottom: 0;}
+div#wrap section .ex1 {position: fixed; bottom: 37%; left: 70%; width: 400px; height: 100px; padding: 20px; font-size: 14px; color:#0c0c0c; }
+div#wrap section .ex1 li { padding: 5px;}
+div#wrap section .ex { display: none;}
+div#wrap section .ex2 { display: none;}
+div#wrap section .ex3 { display: none;}
+div#wrap section .ex4 { display: none;}
+div#wrap figure .up img { display: none;}
+div#wrap figure img { display: none;}
+
+
+
+
+
+/* Renewal */
+div#wrap.Renewal {background-color: #fff7df;}
+div#wrap.Renewal ul#gnb a {color:#000000;}
+div#wrap.Renewal ul#sns i{color: #000000;}
+div#wrap.Renewal figure {background: url(../img/aesop\ main.png)no-repeat center/contain; position: fixed; top: 15%; right: 24%; }
+div#wrap.Renewal figure p a { border: 2px solid #111; padding: 10px; border-radius: 3px; position: fixed; bottom: 7%; left: 46%;}
+div#wrap.Renewal figure a:hover { color: #fff7df; background-color: #000000; transition: .5s;}
+div#wrap.Renewal figure ul li a { display: none;}
+
+div#wrap.Renewal button {display: block; width: 160px; height: 30px; position: fixed;  bottom: 35%; left: 72%; }
+div#wrap.Renewal button a {display: block; width: 160px; height: 30px; position: fixed;  bottom: 35%; left: 72%;}
+div#wrap.Renewal button:hover { width: 160px; height: 30px; position: fixed;  bottom: 35%; left: 72%; background-color: #000000; color: #ffb936;}
+
+
+div#wrap.Renewal section .ex {display: block; position: fixed; bottom: 37%; left: 70%; width: 100%; padding: 20px; font-size: 14px; color:#020202;  }
+div#wrap.Renewal section .ex li { padding: 5px;}
+div#wrap.Renewal section .ex1 { display: none;}
+div#wrap.Renewal section .ex2 { display: none;}
+div#wrap.Renewal section .ex3 { display: none;}
+div#wrap.Renewal section .ex4 { display: none;}
+div#wrap.Renewal figure .main { display: none;}
+div#wrap.Renewal figure .sub { display: block;}
+div#wrap.Renewal figure ol { display: none;}
+div#wrap.Renewal figure img { display: none;}
+
+/* Details page */
+div#wrap.Details_page {background-color: #850de7;}
+div#wrap.Details_page ul#gnb a {color: #ffffff;}
+div#wrap.Details_page ul#sns i{color: #ffffff;}
+
+div#wrap.Details_page figure {position: fixed; top: 10%; left: 47%; height: 500px;}
+div#wrap.Details_page figure ol .page1 { background: url(../img/Santa\ Maria\ Novella_1.png) no-repeat center/cover;}
+div#wrap.Details_page figure ol .page2 { background: url(../img/Santa\ Maria\ Novella_2.png) no-repeat center/cover;}
+div#wrap.Details_page figure ol .page3 { background: url(../img/Santa\ Maria\ Novella_3.png) no-repeat center/cover;}
+div#wrap.Details_page figure ol .page4 { background: url(../img/Santa\ Maria\ Novella_4.png) no-repeat center/cover;}
+
+
+div#wrap.Details_page figure p {color: #0c0c0c;}
+div#wrap.Details_page figure ul {display: none;}
+div#wrap.Details_page section .ex2 { display: block; position: fixed; bottom: 30%; left: 58%; width: 100%; padding: 20px; font-size: 14px; color:#ffffff; }
+div#wrap.Details_page section .ex2 li { padding: 5px;}
+div#wrap.Details_page section .ex { display: none;}
+div#wrap.Details_page section .ex1 { display: none;}
+div#wrap.Details_page section .ex3 { display: none;}
+div#wrap.Details_page section .ex4 { display: none;}
+div#wrap.Details_page figure p > a { display: none;}
+div#wrap.Details_page figure img { display: none;}
+
+
+/* CardNews */
+div#wrap.CardNews {background-color: #ffb936;}
+div#wrap.CardNews ul#gnb a {color: #fff;}
+div#wrap.CardNews ul#sns i{color: #fff;}
+div#wrap.CardNews figure a { display: none;}
+div#wrap.CardNews figure ul { display: block;}
+div#wrap.CardNews figure {position: fixed; top: 17%; left: 24%; height: 500px; overflow: hidden; background: url(../img/Insta\ card\ news2.png)no-repeat center/cover;}
+div#wrap.CardNews figure ul .slide01 { background: url(../img/Insta\ card\ news0.png) no-repeat center/cover;}
+div#wrap.CardNews figure ul .slide02 { background: url(../img/Insta\ card\ news1.png) no-repeat center/cover;}
+div#wrap.CardNews figure ul .slide03 { background: url(../img/Insta\ card\ news2.png) no-repeat center/cover;}
+div#wrap.CardNews figure ul .slide04 { background: url(../img/Insta\ card\ news3.png) no-repeat center/cover;}
+div#wrap.CardNews figure ul li { width: 100%; height: 500px;}
+
+div#wrap.CardNews figure p {color: #fff;}
+
+div#wrap.CardNews section .ex3 {display: block; position: fixed; bottom: 30%; left: 58%; width: 100%; padding: 20px; font-size: 14px; color:#ffffff;}
+div#wrap.CardNews section .ex3 li { padding: 5px;}
+div#wrap.CardNews section .ex { display: none;}
+div#wrap.CardNews section .ex1 { display: none;}
+div#wrap.CardNews section .ex2 { display: none;}
+div#wrap.CardNews section .ex4 { display: none;}
+div#wrap.CardNews figure ol { display: none;}
+div#wrap.CardNews figure img { display: none;}
+div#wrap.CardNews ul#gnb li:hover a { font-size: 26px; color: #080808; }
+
+/* Event banner */
+div#wrap.Event_banner { background-color: #e717dd; }
+
+div#wrap.Event_banner ul#gnb a {color: #ffffff;}
+div#wrap.Event_banner ul#sns i{color: #000000;}
+div#wrap.Event_banner figure {background: url(../img/Seongsimdang_banner.png)no-repeat center/contain; position: fixed; top: 10%; left: 33%; }
+div#wrap.Event_banner figure img {display: block; width: 230px; position: fixed; top: 18%; left: 42%; }
+div#wrap.Event_banner figure a { display: none;}
+div#wrap.Event_banner figure p {color: #fff;}
+
+div#wrap.Event_banner section .ex { display: none;}
+div#wrap.Event_banner section .ex1 { display: none;}
+div#wrap.Event_banner section .ex2 { display: none;}
+div#wrap.Event_banner section .ex3 { display: none;}
+div#wrap.Event_banner section .ex4 { display: block; position: fixed; bottom: 30%; left: 65%; width: 100%; padding: 20px; font-size: 14px; color:#ffffff;}
+div#wrap.Event_banner section .ex4 li { padding: 5px;}
+div#wrap.Event_banner figure ul { display: none;}
+div#wrap.Event_banner figure p { display: none;}
+div#wrap.Event_banner figure ol { display: none;}
