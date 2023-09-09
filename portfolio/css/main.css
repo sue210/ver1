@@ -52,7 +52,7 @@ div#wrap figure p a {width: 140px; height: 20px; padding: 7px; font-size: 14px; 
 div#wrap figure a:hover { color: #fff7df; background-color: #000000; transition: .5s;}
 div#wrap figure ul li a { display: none;}
 div#wrap button { position: absolute; bottom: 0;}
-div#wrap section .ex1 {position: fixed; bottom: 37%; left: 70%; width: 400px; height: 100px; padding: 20px; font-size: 14px; color:#0c0c0c; }
+div#wrap section .ex1 {position: fixed; bottom: 45%; left: 70%; width: 400px; height: 100px; padding: 20px; font-size: 14px; color:#0c0c0c; }
 div#wrap section .ex1 li { padding: 5px;}
 div#wrap section .ex { display: none;}
 div#wrap section .ex2 { display: none;}
